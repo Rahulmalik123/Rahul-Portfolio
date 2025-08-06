@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://rahul.dev/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow specific files
+Disallow: /vite.svg
+Disallow: /.env
+Disallow: /node_modules/
+
+# Allow important pages
+Allow: /
+Allow: /projects
+
+# Contact information
+# Portfolio of Rahul Malik - React Native Developer
+# Email: arahulmalik25@gmail.com
+# Specializing in mobile app development and MERN stack
