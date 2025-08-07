@@ -220,7 +220,7 @@ function Home() {
             {[
               { icon: Users, value: '10+', label: 'Live Apps' },
               { icon: Star, value: '4+', label: 'Years Exp' },
-              { icon: Calendar, value: '2020', label: 'BCA Graduate' }
+              { icon: Calendar, value: '2017-2020', label: 'BCA Graduate' }
             ].map((stat, index) => (
               <motion.div 
                 key={index}
@@ -364,9 +364,9 @@ function Home() {
                     className="flex flex-wrap gap-3"
                   >
                     {[
-                      { icon: Award, label: '2+ Years Experience', color: 'from-purple-500 to-purple-600' },
+                      { icon: Award, label: '4+ Years Experience', color: 'from-purple-500 to-purple-600' },
                       { icon: Target, label: '10+ Live Apps', color: 'from-pink-500 to-pink-600' },
-                      { icon: Star, label: 'BCA Graduate', color: 'from-orange-500 to-orange-600' }
+                      { icon: Star, label: 'BCA Graduate (2017-2020)', color: 'from-orange-500 to-orange-600' }
                     ].map((badge, index) => (
                       <motion.div
                         key={index}
@@ -634,8 +634,30 @@ function Home() {
                 link: 'https://play.google.com/store/apps/details?id=com.duocortex'
               },
               {
+                title: 'Aurom - Mental Health Support',
+                description: 'Professional listener app providing 24x7 anonymous support for mental health. Users can talk to verified, trained professional listeners for stress relief and emotional support.',
+                image: '🧠',
+                gradient: 'from-green-500 to-teal-500',
+                bgGradient: 'from-green-500/20 to-teal-500/20',
+                technologies: ['React Native', 'MERN Stack', 'Real-time Audio', 'WebRTC', 'Payment Gateway'],
+                features: ['Anonymous Support', '24x7 Availability', 'Professional Listeners', 'Privacy Focused'],
+                metrics: { users: 'Live', rating: '4.6', downloads: 'Play Store' },
+                link: 'https://play.google.com/store/apps/details?id=com.aurom.listener'
+              },
+              {
+                title: 'Pandsecure Health',
+                description: 'Pandemic preparedness application designed to empower individuals with tools and information for health assessment and epidemic readiness.',
+                image: '🛡️',
+                gradient: 'from-purple-500 to-indigo-500',
+                bgGradient: 'from-purple-500/20 to-indigo-500/20',
+                technologies: ['React Native', 'MERN Stack', 'Health APIs', 'Data Analytics', 'Firebase'],
+                features: ['Health Assessment', 'Pandemic Preparedness', 'Resource Access', 'Guidance System'],
+                metrics: { users: 'Live', rating: '4.7', downloads: 'App Store' },
+                link: 'https://apps.apple.com/in/app/pandsecure-health/id6746241303'
+              },
+              {
                 title: 'Experts4u - Beauty Services',
-                description: 'Experts4u brings professional salon and home services directly to your doorstep, ensuring convenience, privacy, and high-quality service. Our team of trained professionals .',
+                description: 'Professional beauty services app providing salon and spa services at home in Gurugram. Complete booking system with CS-Cart integration.',
                 image: '💄',
                 gradient: 'from-pink-500 to-rose-500',
                 bgGradient: 'from-pink-500/20 to-rose-500/20',
@@ -813,7 +835,8 @@ function Home() {
                     'Built multiple production apps including Duocortex (medical study app) and Pandsecure Health',
                     'Optimized app performance by diagnosing and fixing bugs, memory leaks, and performance bottlenecks',
                     'Worked with RESTful APIs and GraphQL to fetch and manage data efficiently',
-                    'Collaborated with UI/UX designers, backend developers, and product managers'
+                    'Collaborated with UI/UX designers, backend developers, and product managers',
+                    'Deployed and managed apps on App Store and Google Play Store'
                   ],
                   technologies: ['React Native', 'MERN Stack', 'TypeScript', 'Node.js', 'MongoDB', 'Socket.io']
                 },
@@ -831,6 +854,21 @@ function Home() {
                     'Successfully launched Experts4u beauty services app on Play Store'
                   ],
                   technologies: ['React Native', 'MERN Stack', 'Redux', 'CS-Cart', 'Payment Gateway', 'Testing']
+                },
+                {
+                  period: 'May 2022 - Aug 2023',
+                  role: 'React Native Developer',
+                  company: 'Dignitech Media Works Private Limited',
+                  location: 'India',
+                  type: 'Full-time',
+                  gradient: 'from-green-500 to-emerald-500',
+                  achievements: [
+                    'Worked on numerous projects across various domains as a service-based company developer',
+                    'Developed multiple apps including Retina World Congress, CoastalMed, QuickCar Taxi, and Baychr',
+                    'Built cross-platform mobile applications with React Native and web applications using MERN stack',
+                    'Collaborated with diverse teams on projects spanning healthcare, transportation, and e-commerce domains'
+                  ],
+                  technologies: ['React Native', 'React.js', 'Node.js', 'MongoDB', 'Express.js', 'Redux']
                 }
               ].map((job, index) => (
                 <motion.div
