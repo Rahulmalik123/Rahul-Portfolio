@@ -146,10 +146,46 @@ function Projects() {
       metrics: { users: 'Live', rating: '4.4', downloads: 'Play Store' },
       link: 'https://play.google.com/store/apps/details?id=com.focalpoint.visto',
       category: 'Services'
+    },
+    {
+      title: 'Aurom Website - Mental Wellness Platform',
+      description: 'Professional website for Aurom mental wellness services. Features service information, listener profiles, booking system, and comprehensive mental health resources.',
+      image: '🌐',
+      gradient: 'from-emerald-500 to-green-500',
+      bgGradient: 'from-emerald-500/20 to-green-500/20',
+      technologies: ['React', 'JavaScript', 'CSS3', 'Responsive Design', 'Web APIs', 'SEO Optimization'],
+      features: ['Service Showcase', 'Listener Profiles', 'Booking Integration', 'Resource Library'],
+      metrics: { users: 'Live', rating: '4.7', downloads: 'Website' },
+      link: 'https://www.auromapp.com/',
+      category: 'Mental Health'
+    },
+    {
+      title: 'Experts4u Website - Beauty Services',
+      description: 'E-commerce website for home beauty services in Gurugram. Features service catalog, booking system, pricing, and seamless user experience for beauty appointments.',
+      image: '🌐',
+      gradient: 'from-pink-500 to-purple-500',
+      bgGradient: 'from-pink-500/20 to-purple-500/20',
+      technologies: ['React', 'JavaScript', 'E-commerce', 'Payment Integration', 'Booking System', 'Responsive Design'],
+      features: ['Service Catalog', 'Online Booking', 'Payment Gateway', 'User Dashboard'],
+      metrics: { users: 'Live', rating: '4.5', downloads: 'Website' },
+      link: 'https://experts4u.in/',
+      category: 'Services'
+    },
+    {
+      title: 'Buttar.hk - Business Website',
+      description: 'Corporate website for Hong Kong based business. Professional design with modern UI/UX, company information, services showcase, and client engagement features.',
+      image: '🌐',
+      gradient: 'from-blue-500 to-teal-500',
+      bgGradient: 'from-blue-500/20 to-teal-500/20',
+      technologies: ['React', 'JavaScript', 'Corporate Design', 'SEO', 'Performance Optimization', 'Multi-language'],
+      features: ['Corporate Identity', 'Service Showcase', 'Contact Forms', 'Multi-language Support'],
+      metrics: { users: 'Live', rating: '4.6', downloads: 'Website' },
+      link: 'https://buttar.hk/',
+      category: 'Services'
     }
   ]
 
-  const categories = ['All', 'Healthcare', 'Mental Health', 'Services', 'Education', 'Transportation']
+  const categories = ['All', 'Healthcare', 'Mental Health', 'Services', 'Education', 'Transportation', 'Web Development']
   const [selectedCategory, setSelectedCategory] = useState('All')
 
   const filteredProjects = selectedCategory === 'All' 
@@ -232,7 +268,7 @@ function Projects() {
               className="flex justify-center space-x-12 mt-12"
             >
               {[
-                { icon: Users, value: '11+', label: 'Total Projects' },
+                { icon: Users, value: '14', label: 'Total Projects' },
                 { icon: Star, value: '5', label: 'Live Apps' },
                 { icon: Calendar, value: '6', label: 'Categories' }
               ].map((stat, index) => (

@@ -218,7 +218,7 @@ function Home() {
             className="flex justify-center space-x-12 mb-12"
           >
             {[
-              { icon: Users, value: '11', label: 'Live Apps' },
+              { icon: Users, value: '14', label: 'Live Projects' },
               { icon: Star, value: '4+', label: 'Years Exp' },
               { icon: Calendar, value: '2017-2020', label: 'BCA Graduate' }
             ].map((stat, index) => (
@@ -365,7 +365,7 @@ function Home() {
                   >
                     {[
                       { icon: Award, label: '4+ Years Experience', color: 'from-purple-500 to-purple-600' },
-                      { icon: Target, label: '11+ Live Apps', color: 'from-pink-500 to-pink-600' },
+                      { icon: Target, label: '14 Live Projects', color: 'from-pink-500 to-pink-600' },
                       { icon: Star, label: 'BCA Graduate (2017-2020)', color: 'from-orange-500 to-orange-600' }
                     ].map((badge, index) => (
                       <motion.div
