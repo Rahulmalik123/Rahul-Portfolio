@@ -232,7 +232,7 @@ function Projects() {
               className="flex justify-center space-x-12 mt-12"
             >
               {[
-                { icon: Users, value: '10+', label: 'Total Projects' },
+                { icon: Users, value: '11+', label: 'Total Projects' },
                 { icon: Star, value: '5', label: 'Live Apps' },
                 { icon: Calendar, value: '6', label: 'Categories' }
               ].map((stat, index) => (
