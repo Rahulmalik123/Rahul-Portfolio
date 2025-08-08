@@ -134,6 +134,18 @@ function Projects() {
       metrics: { users: 'Private', rating: '4.1', downloads: 'Local' },
       link: 'https://github.com/Rahulmalik123',
       category: 'Services'
+    },
+    {
+      title: 'Visto - Visa Assistance Platform',
+      description: 'Private visa assistance platform that simplifies visa application process. Features structured questionnaires, document management, and profile tools for efficient visa preparation across multiple categories.',
+      image: '🛂',
+      gradient: 'from-blue-600 to-indigo-600',
+      bgGradient: 'from-blue-600/20 to-indigo-600/20',
+      technologies: ['React Native', 'Redux-Persist', 'Document Management', 'Biometric Auth', 'Secure Storage', 'Push Notifications'],
+      features: ['Multiple Visa Types', 'Document Upload', 'Application Review', 'Biometric Login'],
+      metrics: { users: 'Live', rating: '4.4', downloads: 'Play Store' },
+      link: 'https://play.google.com/store/apps/details?id=com.focalpoint.visto',
+      category: 'Services'
     }
   ]
 
