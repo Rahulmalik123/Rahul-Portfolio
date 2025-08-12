@@ -41,6 +41,16 @@ function Home() {
     setSubmitStatus('')
     
     try {
+      // EmailJS configuration - these should be set in Vercel environment variables
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      
+      // Check if all required environment variables are present
+      if (!serviceId || !templateId || !publicKey) {
+        throw new Error('EmailJS configuration missing. Please check environment variables.')
+      }
+      
       // Send email using EmailJS service
       const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
         method: 'POST',
@@ -48,9 +58,9 @@ function Home() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          service_id: import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_portfolio',
-          template_id: import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'template_portfolio',
-          user_id: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY', // Add your EmailJS public key
+          service_id: serviceId,
+          template_id: templateId,
+          user_id: publicKey,
           template_params: {
             from_name: formData.name,
             from_email: formData.email,
@@ -66,7 +76,9 @@ function Home() {
         setFormData({ name: '', email: '', subject: '', message: '' })
         setSubmitStatus('success')
       } else {
-        throw new Error('Failed to send email')
+        const errorText = await response.text()
+        console.error('EmailJS API Error:', errorText)
+        throw new Error(`Failed to send email: ${response.status}`)
       }
       
       // Clear status after 5 seconds
