@@ -12,15 +12,15 @@
   "categories": ["portfolio", "developer", "mobile-apps", "react-native"],
   "icons": [
     {
-      "src": "/icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
+      "src": "/vite.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
     },
     {
-      "src": "/icon-512x512.png",
+      "src": "/b3a3ed40-3a05-4385-9f51-6fd08542722a.jpg",
       "sizes": "512x512",
-      "type": "image/png",
+      "type": "image/jpeg",
       "purpose": "any"
     }
   ],
@@ -32,8 +32,8 @@
       "url": "/projects",
       "icons": [
         {
-          "src": "/icon-192x192.png",
-          "sizes": "192x192"
+          "src": "/vite.svg",
+          "sizes": "any"
         }
       ]
     },
@@ -44,8 +44,8 @@
       "url": "/#contact",
       "icons": [
         {
-          "src": "/icon-192x192.png",
-          "sizes": "192x192"
+          "src": "/vite.svg",
+          "sizes": "any"
         }
       ]
     }

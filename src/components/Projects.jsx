@@ -182,6 +182,18 @@ function Projects() {
       metrics: { users: 'Live', rating: '4.6', downloads: 'Website' },
       link: 'https://buttar.hk/',
       category: 'Services'
+    },
+    {
+      title: 'Buttar Consultant - Business Consultancy',
+      description: 'Professional business consultancy platform with integrated Calendly scheduling system. Offers expert consulting services with seamless appointment booking for client meetings.',
+      image: '💼',
+      gradient: 'from-amber-500 to-yellow-500',
+      bgGradient: 'from-amber-500/20 to-yellow-500/20',
+      technologies: ['React', 'JavaScript', 'Calendly API', 'Booking System', 'Responsive Design', 'Professional UI'],
+      features: ['Calendly Integration', 'Appointment Booking', 'Consulting Services', 'Client Management'],
+      metrics: { users: 'Live', rating: '4.8', downloads: 'Website' },
+      link: 'https://buttarconsultant.com/',
+      category: 'Services'
     }
   ]
 
@@ -268,7 +280,7 @@ function Projects() {
               className="flex justify-center space-x-12 mt-12"
             >
               {[
-                { icon: Users, value: '14', label: 'Total Projects' },
+                { icon: Users, value: '15', label: 'Total Projects' },
                 { icon: Star, value: '5', label: 'Live Apps' },
                 { icon: Calendar, value: '6', label: 'Categories' }
               ].map((stat, index) => (

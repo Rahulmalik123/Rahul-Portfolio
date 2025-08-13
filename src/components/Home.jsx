@@ -46,9 +46,16 @@ function Home() {
       const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       
+      // Debug: Log environment variables (remove in production)
+      console.log('EmailJS Environment Variables:', {
+        serviceId: serviceId ? 'Present' : 'Missing',
+        templateId: templateId ? 'Present' : 'Missing', 
+        publicKey: publicKey ? 'Present' : 'Missing'
+      })
+      
       // Check if all required environment variables are present
       if (!serviceId || !templateId || !publicKey) {
-        throw new Error('EmailJS configuration missing. Please check environment variables.')
+        throw new Error(`EmailJS configuration missing. Service: ${serviceId ? '✓' : '✗'}, Template: ${templateId ? '✓' : '✗'}, Public Key: ${publicKey ? '✓' : '✗'}`)
       }
       
       // Send email using EmailJS service
@@ -142,8 +149,8 @@ function Home() {
       </motion.nav>
 
       {/* Hero Section */}
-      <section id="hero" className="relative min-h-screen flex items-center justify-center">
-        <div className="text-center px-4 max-w-6xl mx-auto z-10">
+      <section id="hero" className="relative min-h-screen flex  items-center justify-center">
+        <div className="text-center px-4 max-w-6xl pt-24 mx-auto z-10">
           {/* Floating Elements */}
           <motion.div
             animate={{ 
@@ -279,23 +286,7 @@ function Home() {
             </motion.a>
           </motion.div>
 
-          {/* Scroll Indicator */}
-          <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 2 }}
-            className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-          >
-            <motion.div
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
-              className="flex flex-col items-center cursor-pointer"
-              onClick={() => scrollToSection('about')}
-            >
-              <span className="text-sm text-gray-400 mb-2">Scroll Down</span>
-              <ChevronDown className="w-6 h-6 text-purple-400" />
-            </motion.div>
-          </motion.div>
+        
         </div>
       </section>
 
